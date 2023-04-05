@@ -16,7 +16,7 @@
       <div class="container">
         <a href="home.html"><button class="btn-nav">Home</button></a>
         <div class="container text-center judulGame">
-          <h1>Tahu Bulat's Game</h1>
+          <h1>Kocheng</h1>
         </div>
         <a href="aboutus.html"><button class="btn-nav">About Us</button></a>
       </div>
@@ -36,7 +36,7 @@
 
               <div class="uang">
                 <span class="uangVal p-2">$0</span>
-                <p>Uang Juragan</p>
+                <p>Mora</p>
               </div>
 
               <div>
@@ -51,8 +51,8 @@
         <div class="col-lg-7">
           <div class="bungkusTahu">
             <div class="bungkusTahu-content">
-              <h5 id="income" class="incomeJuragan p-3">Income = $1</h5>
-              <img src="Asset/img/keqingjempol.gif" class="gambarTahu">
+              <h5 id="income" class="incomeMora p-3">Income = $1</h5>
+              <img src="Asset/img/keqingjempol.gif" class="gambarKeqing">
             </div>
           </div>
         </div>
@@ -64,20 +64,20 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content container">
         <div class="modal-header text-center">
-          <h1 class="modal-title">Upgrade Income Juragan</h1>
+          <h1 class="modal-title">Upgrade Income Mora</h1>
           <button type="button" class="close" onclick="closeModal()">&times;</button>
         </div>
         <div class="modal-body">
           <div class="button">
-            <button type="button" class="btnUpgrade btnRisol" data-index="0">Mie level-1 $50</button>
+            <button type="button" class="btnUpgrade btnMadame" data-index="0">Sweet Madame $50</button>
             <p class="keterangan ketRisol text-center mt-2">Income +$1</p>
           </div>
           <div class="button">
-            <button type="button" class="btnUpgrade btnCakwe" data-index="1">Rendang level-1 $80</button>
+            <button type="button" class="btnUpgrade btnParcels" data-index="1">Jade Parcels $80</button>
             <p class="keterangan ketCakwe text-center mt-2">Income +$2</p>
           </div>
           <div class="button">
-            <button type="button" class="btnUpgrade btnCimol" data-index="2">Nasgor level-1 $100</button>
+            <button type="button" class="btnUpgrade btnAdeptus" data-index="2">Adeptus' Temptation $100</button>
             <p class="keterangan ketCimol text-center mt-2">Income +$3</p>
           </div>
         </div>
@@ -105,7 +105,7 @@ const cabangElem = document.querySelector('.cabangVal');
 const btnAuto = document.querySelector('.btnAuto');
 const btnCabang = document.querySelector('.btnCabang');
 const btnUpgrade = document.querySelectorAll('.btnUpgrade');
-const imgTahu = document.querySelector('.gambarTahu');
+const imgTahu = document.querySelector('.gambarKeqing');
 
 function doubleIncome()
 {
@@ -128,7 +128,7 @@ function buyAutoClicker() {
   }
     else if(money < 80 && !autoClicker)
     {
-      alert("Uang Tidak Cukup Untuk Membeli Autoclicker");
+      alert("Mora Tidak Cukup Untuk Membeli Autoclicker");
     }
 }
 
@@ -176,7 +176,7 @@ function upgradeIncome(event) {
   if (money >= selectedUpgrade.cost) {
     income += selectedUpgrade.incomeIncrease;
     money -= selectedUpgrade.cost;
-    incomeElem.textContent = "Income Juragan = " + `$${income}`;
+    incomeElem.textContent = "Income Mora = " + `$${income}`;
     moneyElem.textContent = `$${money}`;
     closeModal();
   }
@@ -184,7 +184,7 @@ function upgradeIncome(event) {
 
 // Update income display
 const incomeElem = document.getElementById('income');
-incomeElem.textContent = "Income Juragan = " + `$${income}`;
+incomeElem.textContent = "Income Mora = " + `$${income}`;
 
   </script>
 </body>

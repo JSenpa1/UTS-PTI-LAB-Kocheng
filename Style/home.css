@@ -4,6 +4,11 @@
   }
 }
 
+@font-face {
+  font-family: 'genshin';
+  src: url(genshin.ttf) format('truetype');
+}
+
 html, body{
   height: 100%;
 }
@@ -17,9 +22,9 @@ html, body{
 }
 
 .judul h1{
-  font-family: 'Sigmar One', cursive;
+  font-family: genshin;
   text-shadow: 0px 6px 5px rgba(185, 185, 185, 1);
-  color: #232323;
+  color: white;
   margin-top: 30px;
   font-size: 100px;
 }
@@ -27,27 +32,44 @@ html, body{
 .btn{
   padding: 20px 24px;
   border: none;
-  background-color: #078080;
+  background-color: #2b2b38;
   color: #f8f5f2;
   border-radius: 10px;
   box-shadow: 1px 10px 47px 8px rgba(199,199,199,0.68);
   width: 30%;
 }
 
+.btn :hover
+{
+  color: #2b2b38;
+  text-decoration: none;
+}
+
 .btn2{
   padding: 20px 24px;
   border: none;
-  background-color: #078080;
+  background-color: #2b2b38;
   color: #f8f5f2;
   border-radius: 10px;
   box-shadow: 1px 10px 47px 8px rgba(199,199,199,0.68);
   width: 30%;
+}
+
+.btn2 :hover
+{
+  color: #2b2b38;
+  text-decoration: none;
+}
+
+b
+{
+  font-family: genshin;
 }
 
 .button{
   margin-top: 120px;
 }
 
-.gambarTahu{
+.gambarKeqing{
   width: 200px;
 }

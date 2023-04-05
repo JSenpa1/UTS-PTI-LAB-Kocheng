@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&family=Sigmar+One&display=swap');
 
+@font-face {
+    font-family: 'genshin';
+    src: url(genshin.ttf) format('truetype');
+}
+
 * {
-  font-family: 'Secular One', sans-serif;
+  font-family: genshin;
 }
 
 .judulGame h1{
-    font-family: 'Sigmar One', cursive;
+    font-family: genshin;
     text-shadow: 0px 6px 5px rgba(185, 185, 185, 1);
     color: #232323;
   }
@@ -19,6 +24,11 @@
     padding: 49px;
 }
 
+h2
+{
+    color: white;
+}
+
 .navbar 
 {
     padding-top: 24px;
@@ -29,7 +39,7 @@
 {
     padding: 12px 24px;
     border: none;
-    background-color: #078080;
+    background-color: #2b2b38;
     color: #f8f5f2;
     border-radius: 10px;
     box-shadow: 1px 10px 47px 8px rgba(199,199,199,0.68);
@@ -48,7 +58,7 @@
 
 .avatars 
 {
-    height: 375px
+    height: 375px;
 }
 
 .texts
@@ -68,6 +78,7 @@
     padding-top: 10px;
     margin-bottom: 10px;
     margin-left: 0;
+    height: 70px;
 }
 
 .texts p1
@@ -75,6 +86,11 @@
     font-size: 16px;
     font-weight: normal;
     text-align: center;
+}
+
+.references
+{
+    color: white;
 }
 
 @media (max-width: 1000px) {
@@ -139,7 +155,7 @@
 
     .references
     {
-        margin-top: 600px;
+        margin-top: 1010px;
     }
   }
 
