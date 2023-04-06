@@ -180,6 +180,11 @@ function upgradeIncome(event) {
     moneyElem.textContent = `$${money}`;
     closeModal();
   }
+
+  else if (money < selectedUpgrade.cost)
+  {
+    alert("Uang Tidak Cukup Untuk Membeli Recipe Baru");
+  }
 }
 
 // Update income display
